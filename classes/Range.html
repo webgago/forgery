@@ -27,7 +27,7 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/extensions/range_rb.html">lib/extensions/range.rb</a></li>
+            <li><a href="../files/lib/forgery/extensions/range_rb.html">lib/forgery/extensions/range.rb</a></li>
             
         </ul>
     </div>
@@ -49,7 +49,7 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000008">random</a></li>
+                <li><a href="#M000007">random</a></li>
                 
             </ul>
         </dd>
@@ -71,9 +71,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000008">
+                <div class="title" id="M000007">
                     
-                    <a name="M000008"></a><b>random</b>()
+                    <a name="M000007"></a><b>random</b>()
                     
                 </div>
                 
@@ -82,17 +82,19 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000008_source')" id="l_M000008_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000007_source')" id="l_M000007_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/range.rb#L2" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000008_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/range.rb, line 2</span>
+                    <div id="M000007_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/range.rb, line 2</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random</span>
     <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">first</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">last</span>)
     <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">first</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">last</span>
     <span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">last</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">first</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">first</span>
   <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">ArgumentError</span>
-    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">random</span>
+    <span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">random</span>
   <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>

@@ -27,7 +27,7 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/extensions/hash_rb.html">lib/extensions/hash.rb</a></li>
+            <li><a href="../files/lib/forgery/extensions/hash_rb.html">lib/forgery/extensions/hash.rb</a></li>
             
         </ul>
     </div>
@@ -51,7 +51,7 @@
                 
                 <li><a href="#M000006">reverse_merge</a>,</li>
                 
-                <li><a href="#M000007">reverse_merge!</a></li>
+                <li><a href="#M000008">reverse_merge!</a></li>
                 
             </ul>
         </dd>
@@ -94,9 +94,11 @@ hash taking precedence over the second.
                     <p class="source-link">
                         Source: <a href="javascript:toggleSource('M000006_source')" id="l_M000006_source">show</a>
                         
+                        | <a href="http://github.com/sevenwire/forgery/blob/c86d042c7164ca70bfa35d0c11503dbe0bd4cf78/lib/forgery/extensions/hash.rb#L3" target="_blank" class="github_url">on GitHub</a>
+                        
                     </p>
                     <div id="M000006_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/hash.rb, line 3</span>
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/hash.rb, line 3</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reverse_merge</span>(<span class="ruby-identifier">other_hash</span>)
     <span class="ruby-identifier">other_hash</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-keyword kw">self</span>)
   <span class="ruby-keyword kw">end</span></pre>
@@ -106,9 +108,9 @@ hash taking precedence over the second.
             </div>
             
             <div class="method">
-                <div class="title" id="M000007">
+                <div class="title" id="M000008">
                     
-                    <a name="M000007"></a><b>reverse_merge!</b>(other_hash)
+                    <a name="M000008"></a><b>reverse_merge!</b>(other_hash)
                     
                 </div>
                 
@@ -125,11 +127,13 @@ hash taking precedence over the second. Modifies the receiver in place.
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000007_source')" id="l_M000007_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000008_source')" id="l_M000008_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/c86d042c7164ca70bfa35d0c11503dbe0bd4cf78/lib/forgery/extensions/hash.rb#L9" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000007_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/hash.rb, line 9</span>
+                    <div id="M000008_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/hash.rb, line 9</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reverse_merge!</span>(<span class="ruby-identifier">other_hash</span>)
     <span class="ruby-identifier">replace</span>(<span class="ruby-identifier">reverse_merge</span>(<span class="ruby-identifier">other_hash</span>))
   <span class="ruby-keyword kw">end</span></pre>

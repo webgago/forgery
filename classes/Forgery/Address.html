@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Forgery::Address</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+    <script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>     
+    <div class="banner">
+        <h1>
+            <span class="type">Class</span> 
+            Forgery::Address 
+            
+                <span class="parent">&lt; 
+                    
+                    <a href="../Forgery.html">Forgery</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../../files/lib/forgery/forgery/address_rb.html">lib/forgery/forgery/address.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+    
+    <div class="description">
+        <p>
+Generates random address information.
+</p>
+
+    </div>
+    
+
+    
+
+    
+    
+
+    
+    
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+    
+        <dt>C</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000028">city</a>,</li>
+                
+                <li><a href="#M000036">country</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>P</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000035">phone</a>,</li>
+                
+                <li><a href="#M000032">province</a>,</li>
+                
+                <li><a href="#M000033">province_abbrev</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>S</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000029">state</a>,</li>
+                
+                <li><a href="#M000030">state_abbrev</a>,</li>
+                
+                <li><a href="#M000027">street_address</a>,</li>
+                
+                <li><a href="#M000023">street_name</a>,</li>
+                
+                <li><a href="#M000024">street_number</a>,</li>
+                
+                <li><a href="#M000025">street_suffix</a></li>
+                
+            </ul>
+        </dd>
+    
+        <dt>Z</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000034">zip</a></li>
+                
+            </ul>
+        </dd>
+    
+    </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+            <div class="sectiontitle">Class Public methods</div>
+            
+            <div class="method">
+                <div class="title" id="M000028">
+                    
+                    <a name="M000028"></a><b>city</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random city out of the &#8216;cities&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).city
+  # =&gt; &quot;Anaheim&quot;
+
+  Forgery(:address).city
+  # =&gt; &quot;Sacramento&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000028_source')" id="l_M000028_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L57" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000028_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 57</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">city</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:cities</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000036">
+                    
+                    <a name="M000036"></a><b>country</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random country out of the &#8216;countries&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).country
+  # =&gt; &quot;Uruguay&quot;
+
+  Forgery(:address).country
+  # =&gt; &quot;Romania&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000036_source')" id="l_M000036_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L134" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000036_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 134</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">country</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:countries</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000035">
+                    
+                    <a name="M000035"></a><b>phone</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets one of the formats from &#8216;phone_formats&#8217; and converts it to
+numbers.
+</p>
+<pre>
+  Forgery(:address).phone
+  # =&gt; &quot;1-(416)185-8799&quot;
+
+  Forgery(:address).phone
+  # =&gt; &quot;1-(589)248-0418&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000035_source')" id="l_M000035_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L123" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000035_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 123</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">phone</span>
+    <span class="ruby-identifier">formats</span>[<span class="ruby-identifier">:phone</span>].<span class="ruby-identifier">random</span>.<span class="ruby-identifier">to_numbers</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000032">
+                    
+                    <a name="M000032"></a><b>province</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random Canadian province or territory out of the
+&#8216;provinces&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).province
+  # =&gt; &quot;Ontario&quot;
+
+  Forgery(:address).province
+  # =&gt; &quot;Northwest Territories&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000032_source')" id="l_M000032_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L90" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000032_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 90</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">province</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:provinces</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000033">
+                    
+                    <a name="M000033"></a><b>province_abbrev</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random Canadian province or territory abbreviation out of the
+&#8216;<a href="Address.html#M000033">province_abbrev</a>&#8217;
+dictionary.
+</p>
+<pre>
+  Forgery(:address).province_abbrev
+  # =&gt; &quot;ON&quot;
+
+  Forgery(:address).province_abbrev
+  # =&gt; &quot;NT&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000033_source')" id="l_M000033_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L101" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000033_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 101</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">province_abbrev</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:province_abbrevs</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000029">
+                    
+                    <a name="M000029"></a><b>state</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random state out of the &#8216;states&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).state
+  # =&gt; &quot;Mississippi&quot;
+
+  Forgery(:address).state
+  # =&gt; &quot;Minnesota&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000029_source')" id="l_M000029_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L68" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000029_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 68</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">state</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:states</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000030">
+                    
+                    <a name="M000030"></a><b>state_abbrev</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random state abbreviation out of the &#8216;<a
+href="Address.html#M000030">state_abbrev</a>&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).state_abbrev
+  # =&gt; &quot;GA&quot;
+
+  Forgery(:address).state_abbrev
+  # =&gt; &quot;TX&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000030_source')" id="l_M000030_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L79" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000030_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 79</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">state_abbrev</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:state_abbrevs</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000027">
+                    
+                    <a name="M000027"></a><b>street_address</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a full street address, including street number, street name, and
+street suffix.
+</p>
+<pre>
+  Forgery(:address).street_address
+  # =&gt; &quot;92 West Circle&quot;
+
+  Forgery(:address).street_address
+  # =&gt; &quot;93265 Harper Lane&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000027_source')" id="l_M000027_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L46" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000027_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 46</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">street_address</span>
+    <span class="ruby-node">&quot;#{street_number} #{street_name} #{street_suffix}&quot;</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000023">
+                    
+                    <a name="M000023"></a><b>street_name</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random street name out of the &#8216;streets&#8217; dictionary.
+</p>
+<pre>
+  Forgery(:address).street_name
+  # =&gt; &quot;Atwood&quot;
+
+  Forgery(:address).street_name
+  # =&gt; &quot;Fordem&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000023_source')" id="l_M000023_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L11" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000023_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 11</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">street_name</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:streets</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000024">
+                    
+                    <a name="M000024"></a><b>street_number</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets one of the formats from &#8216;street_number_formats&#8217; and
+converts it to numbers.
+</p>
+<pre>
+  Forgery(:address).street_number
+  # =&gt; 1
+
+  Forgery(:address).street_number
+  # =&gt; 1234
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000024_source')" id="l_M000024_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L23" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000024_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 23</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">street_number</span>
+    <span class="ruby-identifier">formats</span>[<span class="ruby-identifier">:street_number</span>].<span class="ruby-identifier">random</span>.<span class="ruby-identifier">to_numbers</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000025">
+                    
+                    <a name="M000025"></a><b>street_suffix</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets a random street suffix out of the &#8216;street_suffixes&#8217;
+dictionary.
+</p>
+<pre>
+  Forgery(:address).street_suffix
+  # =&gt; &quot;Street&quot;
+
+  Forgery(:address).street_suffix
+  # =&gt; &quot;Parkway&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000025_source')" id="l_M000025_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L34" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000025_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 34</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">street_suffix</span>
+    <span class="ruby-identifier">dictionaries</span>[<span class="ruby-identifier">:street_suffixes</span>].<span class="ruby-identifier">random</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000034">
+                    
+                    <a name="M000034"></a><b>zip</b>()
+                    
+                </div>
+                
+                <div class="description">
+                  <p>
+Gets one of the formats from &#8216;zip_formats&#8217; and converts it to
+numbers.
+</p>
+<pre>
+  Forgery(:address).zip
+  # =&gt; &quot;52474&quot;
+
+  Forgery(:address).zip
+  # =&gt; &quot;66702-4349&quot;
+</pre>
+
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000034_source')" id="l_M000034_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/529b77047c97b5f28dc950a36823bbe05e791bc3/lib/forgery/forgery/address.rb#L112" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000034_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery/address.rb, line 112</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">zip</span>
+    <span class="ruby-identifier">formats</span>[<span class="ruby-identifier">:zip</span>].<span class="ruby-identifier">random</span>.<span class="ruby-identifier">to_numbers</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+</div>
+    </div>
+  </body>
+</html>    

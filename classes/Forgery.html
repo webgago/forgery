@@ -27,7 +27,15 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/forgery_rb.html">lib/forgery.rb</a></li>
+            <li><a href="../files/lib/forgery/dictionaries_rb.html">lib/forgery/dictionaries.rb</a></li>
+            
+            <li><a href="../files/lib/forgery/file_reader_rb.html">lib/forgery/file_reader.rb</a></li>
+            
+            <li><a href="../files/lib/forgery/forgery_rb.html">lib/forgery/forgery.rb</a></li>
+            
+            <li><a href="../files/lib/forgery/formats_rb.html">lib/forgery/formats.rb</a></li>
+            
+            <li><a href="../files/lib/forgery/version_rb.html">lib/forgery/version.rb</a></li>
             
         </ul>
     </div>
@@ -63,6 +71,17 @@
             </ul>
         </dd>
     
+        <dt>R</dt>
+        <dd>
+            <ul>
+                
+                <li><a href="#M000078">rails?</a>,</li>
+                
+                <li><a href="#M000077">rails_root</a></li>
+                
+            </ul>
+        </dd>
+    
     </dl>
     
 
@@ -71,7 +90,44 @@
     
 
     
+    <div class="sectiontitle">Classes and Modules</div>
+    <ul>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Address.html">Forgery::Address</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Basic.html">Forgery::Basic</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Dictionaries.html">Forgery::Dictionaries</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/FileReader.html">Forgery::FileReader</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Formats.html">Forgery::Formats</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Internet.html">Forgery::Internet</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/LoremIpsum.html">Forgery::LoremIpsum</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Monetary.html">Forgery::Monetary</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Name.html">Forgery::Name</a></li>
+        
+        <li><span class="type">CLASS</span> <a href="Forgery/Personal.html">Forgery::Personal</a></li>
+        
+    </ul>
+    
 
+    
+    <div class="sectiontitle">Constants</div>
+    <table border='0' cellpadding='5'>
+        
+        <tr valign='top'>
+            <td class="attr-name">VERSION</td>
+            <td>=</td>
+            <td class="attr-value">&quot;0.3.1&quot;</td>
+        </tr>
+        
+        
+    </table>
     
 
     
@@ -93,9 +149,11 @@
                     <p class="source-link">
                         Source: <a href="javascript:toggleSource('M000075_source')" id="l_M000075_source">show</a>
                         
+                        | <a href="http://github.com/sevenwire/forgery/blob/f6d209abfe2176ef633aa16823c6e84c2385ae40/lib/forgery/forgery.rb#L3" target="_blank" class="github_url">on GitHub</a>
+                        
                     </p>
                     <div id="M000075_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/forgery.rb, line 16</span>
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery.rb, line 3</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">dictionaries</span>
     <span class="ruby-ivar">@@dictionaries</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Dictionaries</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-keyword kw">end</span></pre>
@@ -118,11 +176,71 @@
                     <p class="source-link">
                         Source: <a href="javascript:toggleSource('M000076_source')" id="l_M000076_source">show</a>
                         
+                        | <a href="http://github.com/sevenwire/forgery/blob/f6d209abfe2176ef633aa16823c6e84c2385ae40/lib/forgery/forgery.rb#L7" target="_blank" class="github_url">on GitHub</a>
+                        
                     </p>
                     <div id="M000076_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/forgery.rb, line 20</span>
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery.rb, line 7</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">formats</span>
     <span class="ruby-ivar">@@formats</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Formats</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000078">
+                    
+                    <a name="M000078"></a><b>rails?</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000078_source')" id="l_M000078_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/f6d209abfe2176ef633aa16823c6e84c2385ae40/lib/forgery/forgery.rb#L19" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000078_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery.rb, line 19</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rails?</span>
+    <span class="ruby-operator">!</span><span class="ruby-identifier">rails_root</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-keyword kw">end</span></pre>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="method">
+                <div class="title" id="M000077">
+                    
+                    <a name="M000077"></a><b>rails_root</b>()
+                    
+                </div>
+                
+                
+                
+                
+                <div class="sourcecode">
+                    <p class="source-link">
+                        Source: <a href="javascript:toggleSource('M000077_source')" id="l_M000077_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/f6d209abfe2176ef633aa16823c6e84c2385ae40/lib/forgery/forgery.rb#L11" target="_blank" class="github_url">on GitHub</a>
+                        
+                    </p>
+                    <div id="M000077_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/forgery.rb, line 11</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">rails_root</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span>(<span class="ruby-constant">Rails</span>)
+      <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">to_s</span>
+    <span class="ruby-keyword kw">elsif</span> <span class="ruby-keyword kw">defined?</span>(<span class="ruby-constant">RAILS_ROOT</span>)
+      <span class="ruby-constant">RAILS_ROOT</span>
+    <span class="ruby-keyword kw">end</span>
   <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>

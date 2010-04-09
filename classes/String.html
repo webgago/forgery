@@ -27,7 +27,7 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/extensions/string_rb.html">lib/extensions/string.rb</a></li>
+            <li><a href="../files/lib/forgery/extensions/string_rb.html">lib/forgery/extensions/string.rb</a></li>
             
         </ul>
     </div>
@@ -49,11 +49,11 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000013">camelize</a>,</li>
+                <li><a href="#M000010">camelize</a>,</li>
                 
-                <li><a href="#M000020">constantize</a>,</li>
+                <li><a href="#M000019">constantize</a>,</li>
                 
-                <li><a href="#M000017">constantize</a></li>
+                <li><a href="#M000015">constantize</a></li>
                 
             </ul>
         </dd>
@@ -93,9 +93,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000013">
+                <div class="title" id="M000010">
                     
-                    <a name="M000013"></a><b>camelize</b>(first_letter = :upper)
+                    <a name="M000010"></a><b>camelize</b>(first_letter = :upper)
                     
                 </div>
                 
@@ -104,11 +104,13 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000013_source')" id="l_M000013_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000010_source')" id="l_M000010_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/string.rb#L8" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000013_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/string.rb, line 7</span>
+                    <div id="M000010_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/string.rb, line 8</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">camelize</span>(<span class="ruby-identifier">first_letter</span> = <span class="ruby-identifier">:upper</span>)
       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">first_letter</span>
       <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">:upper</span>
@@ -123,9 +125,9 @@
             </div>
             
             <div class="method">
-                <div class="title" id="M000020">
+                <div class="title" id="M000019">
                     
-                    <a name="M000020"></a><b>constantize</b>()
+                    <a name="M000019"></a><b>constantize</b>()
                     
                 </div>
                 
@@ -134,11 +136,13 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000020_source')" id="l_M000020_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000019_source')" id="l_M000019_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/string.rb#L37" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000020_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/string.rb, line 36</span>
+                    <div id="M000019_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/string.rb, line 37</span>
       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">constantize</span>
         <span class="ruby-identifier">names</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'::'</span>)
         <span class="ruby-identifier">names</span>.<span class="ruby-identifier">shift</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">names</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">names</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">empty?</span>
@@ -155,9 +159,9 @@
             </div>
             
             <div class="method">
-                <div class="title" id="M000017">
+                <div class="title" id="M000015">
                     
-                    <a name="M000017"></a><b>constantize</b>()
+                    <a name="M000015"></a><b>constantize</b>()
                     
                 </div>
                 
@@ -166,11 +170,13 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000017_source')" id="l_M000017_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000015_source')" id="l_M000015_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/string.rb#L26" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000017_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/string.rb, line 25</span>
+                    <div id="M000015_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/string.rb, line 26</span>
       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">constantize</span>
         <span class="ruby-identifier">names</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'::'</span>)
         <span class="ruby-identifier">names</span>.<span class="ruby-identifier">shift</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">names</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">names</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">empty?</span>
@@ -200,11 +206,13 @@
                     <p class="source-link">
                         Source: <a href="javascript:toggleSource('M000009_source')" id="l_M000009_source">show</a>
                         
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/string.rb#L2" target="_blank" class="github_url">on GitHub</a>
+                        
                     </p>
                     <div id="M000009_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/string.rb, line 2</span>
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/string.rb, line 2</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_numbers</span>(<span class="ruby-identifier">replace</span>=<span class="ruby-value str">'#'</span>)
-    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-node">/#{replace}/</span>){ <span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-value">10</span>) }
+    <span class="ruby-identifier">gsub</span>(<span class="ruby-node">/#{replace}/</span>){ <span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-value">10</span>) }
   <span class="ruby-keyword kw">end</span></pre>
                     </div>
                 </div>
@@ -225,9 +233,11 @@
                     <p class="source-link">
                         Source: <a href="javascript:toggleSource('M000014_source')" id="l_M000014_source">show</a>
                         
+                        | <a href="http://github.com/sevenwire/forgery/blob/564218834411ff4ebe2bd2e715b6cb37332e1b35/lib/forgery/extensions/string.rb#L17" target="_blank" class="github_url">on GitHub</a>
+                        
                     </p>
                     <div id="M000014_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/string.rb, line 16</span>
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/string.rb, line 17</span>
     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">underscore</span>
       <span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/::/</span>, <span class="ruby-value str">'/'</span>).
         <span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/([A-Z]+)([A-Z][a-z])/</span>,<span class="ruby-value str">'\1_\2'</span>).

@@ -27,7 +27,7 @@
         </h1>
         <ul class="files">
             
-            <li><a href="../files/lib/extensions/array_rb.html">lib/extensions/array.rb</a></li>
+            <li><a href="../files/lib/forgery/extensions/array_rb.html">lib/forgery/extensions/array.rb</a></li>
             
         </ul>
     </div>
@@ -49,9 +49,9 @@
         <dd>
             <ul>
                 
-                <li><a href="#M000004">random</a>,</li>
+                <li><a href="#M000000">random</a>,</li>
                 
-                <li><a href="#M000005">random_subset</a></li>
+                <li><a href="#M000001">random_subset</a></li>
                 
             </ul>
         </dd>
@@ -73,9 +73,9 @@
             <div class="sectiontitle">Instance Public methods</div>
             
             <div class="method">
-                <div class="title" id="M000004">
+                <div class="title" id="M000000">
                     
-                    <a name="M000004"></a><b>random</b>()
+                    <a name="M000000"></a><b>random</b>()
                     
                 </div>
                 
@@ -84,11 +84,13 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000004_source')" id="l_M000004_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000000_source')" id="l_M000000_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/c86d042c7164ca70bfa35d0c11503dbe0bd4cf78/lib/forgery/extensions/array.rb#L2" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000004_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/array.rb, line 2</span>
+                    <div id="M000000_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/array.rb, line 2</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random</span>
     <span class="ruby-keyword kw">self</span>[<span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">size</span>)]
   <span class="ruby-keyword kw">end</span></pre>
@@ -98,9 +100,9 @@
             </div>
             
             <div class="method">
-                <div class="title" id="M000005">
+                <div class="title" id="M000001">
                     
-                    <a name="M000005"></a><b>random_subset</b>(len=2)
+                    <a name="M000001"></a><b>random_subset</b>(len=2)
                     
                 </div>
                 
@@ -109,11 +111,13 @@
                 
                 <div class="sourcecode">
                     <p class="source-link">
-                        Source: <a href="javascript:toggleSource('M000005_source')" id="l_M000005_source">show</a>
+                        Source: <a href="javascript:toggleSource('M000001_source')" id="l_M000001_source">show</a>
+                        
+                        | <a href="http://github.com/sevenwire/forgery/blob/c86d042c7164ca70bfa35d0c11503dbe0bd4cf78/lib/forgery/extensions/array.rb#L6" target="_blank" class="github_url">on GitHub</a>
                         
                     </p>
-                    <div id="M000005_source" class="dyn-source">
-                        <pre><span class="ruby-comment cmt"># File lib/extensions/array.rb, line 6</span>
+                    <div id="M000001_source" class="dyn-source">
+                        <pre><span class="ruby-comment cmt"># File lib/forgery/extensions/array.rb, line 6</span>
   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random_subset</span>(<span class="ruby-identifier">len</span>=<span class="ruby-value">2</span>)
     <span class="ruby-identifier">rs</span> = []
     <span class="ruby-identifier">len</span>.<span class="ruby-identifier">times</span> { <span class="ruby-identifier">rs</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">random</span> }
