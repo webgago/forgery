@@ -29,6 +29,7 @@ class Forgery
     def self.find_file(name, folder)
       Forgery.load_paths.reverse.each do |path|
         file = "#{path}/#{folder}/#{name}"
+        return Forgery.rails_root + file if File.exists?(Forgery.rails_root + file)
         return file if File.exists?(file)
       end
     end
